@@ -8,8 +8,8 @@ services:
     volumes:
       - db:/var/lib/mongodb
 
-  server:
-    build: backend
+  api:
+    build: src
     restart: always
     ports:
       - '${EXPRESS_PORT}:${EXPRESS_PORT}'
@@ -21,8 +21,6 @@ services:
       - DB_HOST=mongodb
       - DB_PORT=${DB_PORT}
       - EXPRESS_PORT=${EXPRESS_PORT}
-      - JWT_SECRET=${JWT_SECRET}
-      - GHTOKEN=${GHTOKEN}
 
 volumes:
   db:
