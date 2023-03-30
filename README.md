@@ -74,6 +74,20 @@ Or Docker-Compose
 
 To deploy this project run
 
+Init project
+
+```bash
+  npm init
+```
+
+Install express dependence
+
+```bash
+  npm install express
+```
+
+Modify .env with envvars informations
+
 ```bash
   docker-compose up --build
 ```
