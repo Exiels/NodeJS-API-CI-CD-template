@@ -14,7 +14,7 @@ async function startServer () {
 
     // Start server
     app.listen(port, () => {
-      console.log(`INFO: CVP Backend listening at http://localhost:${port}`)
+      console.log(`INFO: API listening at http://localhost:${port}`)
     })
   } catch (error) {
     console.error('ERROR: index.js error : ', error)
